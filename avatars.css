@@ -1,0 +1,62 @@
+
+/* 아바타 컨테이너 스타일 */
+.avatars-container {
+  width: 370px;
+  margin: 0 auto;
+  padding: 280px 0; /* 상하 패딩 조정 */
+}
+
+/* 여자 아바타 프로필 이미지 공통 스타일 */
+.first-girl img,
+.second-girl img,
+.third-girl img,
+.four-girl img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  margin-right: 20px; /* 각 아바타 이미지 사이의 간격을 주기 위해 margin-right 추가 */
+  margin-bottom: 10px; /* 여자 아바타 그룹 전체의 아래 간격 추가 */
+}
+
+/* 남자 아바타 프로필 이미지 공통 스타일 */
+.first-man img,
+.second-man img,
+.third-man img,
+.four-man img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%; 
+  float: left;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 20px; /* 각 아바타 이미지 사이의 간격을 주기 위해 margin-right 추가 */
+}
+
+/* 공통 스타일 */
+.circle {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+/* 이미지 상태에 따라 circle의 배경색을 설정 */
+.circle[aria-label="offline"] {
+  background-color: #DBDBDB; /* 회색 원 배경색 */
+}
+
+.circle[aria-label="online"] {
+  background-color: #4CFE88; /* 초록색 원 배경색 */
+}
+
+/* @supports (display: flex) {
+  .avatars-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+} */

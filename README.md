@@ -25,6 +25,8 @@
 4. 여자 이미지는 상단에 위치하고, 남자 이미지는 하단에 위치한다
 5. 이미지 하단에 초록색 원 = 온라인 , 회색 원 = 오프라인 상태로 표시해야한다
 
+link : http://127.0.0.1:5501/avatars.html
+
 # HTML
  
         <div class="avatars-container">
